@@ -1,0 +1,36 @@
+{% load static %}
+{% load active_link_tags %}
+<nav class="navbar navbar-expand-lg fixed-top">
+	<div class="container">
+		<a class="navbar-brand" href="/"><img src="{% static 'images/logo.svg'%}" alt=""></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+			aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"><i aria-hidden="true" class="mdi mdi-menu"> </i></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+			<div class="d-lg-none d-flex justify-content-between px-4 py-3 align-items-center">
+				<img src="{% static 'images/logo-dark.svg'%}" class="logo-mobile-menu" alt="logo">
+				<a href="{% url 'default' %}" class="close-menu"><i aria-hidden="true" class="mdi mdi-close"></i></a>
+			</div>
+			<ul class="navbar-nav ml-auto align-items-center">
+				<li class="nav-item active">
+					<a class="nav-link {% active_link 'home-page' %}" href="{% url 'home-page' %}">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link {% active_link 'services-page' %}" href="{% url 'services-page' %}">Services</a>
+				</li>
+                <li class="nav-item active">
+					<a class="nav-link {% active_link 'how-it-works-page' %}" href="{% url 'how-it-works-page' %}">How it works</a>
+				</li>
+			
+				<li class="nav-item">
+					<a class="nav-link btn btn-outline-success" href="https://app.snappywriters.com/">
+						Get Started
+						<i class="mdi mdi-login"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+

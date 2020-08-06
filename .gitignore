@@ -1,0 +1,7 @@
+node_modules/
+.vscode/
+settings.json
+secretnotes.md
+imports/lib/
+public/fonts/
+app/env/

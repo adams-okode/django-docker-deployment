@@ -1,0 +1,60 @@
+{% load static %}
+<footer class="footer">
+	<div class="footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<address>
+						<div class="d-flex align-items-center">
+							<p class="mr-4 mb-0">+254 702 759950</p>
+							<a href="mailto:contact@snappywriters.com" class="footer-link">contact@snappywriters.com</a>
+						</div>
+						<div class="d-flex align-items-center">
+							<p class="mr-4 mb-0">+254 791 172530</p>
+							
+						</div>
+					</address>
+				</div>
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-sm-4">
+							<h6 class="footer-title">Links</h6>
+							<ul class="list-footer">
+								<li><a href="/" class="footer-link">Home</a></li>
+								<li><a href="{% url 'how-it-works-page' %}" class="footer-link">How it Works</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<h6 class="footer-title">Terms</h6>
+							<ul class="list-footer">
+								<li><a href="{% url 'terms-page' %}" class="footer-link">Terms and conditions</a></li>
+								<li><a href="{% url 'cookie-policy-page' %}" class="footer-link">Cookie Policy</a></li>
+								<li><a href="{% url 'privacy-policy-page' %}" class="footer-link">Privacy policy</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<h6 class="footer-title">Company</h6>
+							<ul class="list-footer">
+								<li><a href="{% url 'about-us-page' %}" class="footer-link">About Us</a></li>
+								<li><a href="{% url 'faq-page' %}" class="footer-link">FAQ</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="d-flex justify-content-between align-items-center">
+				<div class="d-flex align-items-center">
+					<img src="{% static 'images/logo.svg'%}" alt="logo" class="mr-3">
+					<p class="mb-0 text-small pt-1">© 2020 <a href=""
+							class="text-white" target="_blank">Pro Writers</a>. All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+{% comment %} EAAl3KJimFWgBAB62gPHIwwmdEO2xReBLlCrgwMD5nkAlXJvipCcxqPLQfueuWcjhYLwZCoO4MIJ0RyNmRj1YTLuZADlVPBDMQAxriSOFX5f4ZCLvug32IWFpmqLfqDq6lvMcdrZBTRxcGLMveF89FUXmn9mZASobloJ7RqZCA34AZDZD {% endcomment %}

@@ -1,0 +1,37 @@
+image: docker:latest
+
+services:
+  - docker:dind
+
+stages:
+  - test
+  - build
+  - deploy
+
+before_script:
+  - echo "test"
+
+test:
+  tags:
+    - dev
+  stage: test
+  script:
+    - echo "Running tests"
+
+build:
+  tags:
+    - dev
+  stage: build
+  script:
+    - echo "Build and store latest imaage to registry tests"
+
+  only:
+    - master
+
+deploy:
+  tags:
+    - dev
+  stage: deploy
+  script:
+    - docker image prune -f
+    - docker-compose -f "docker-compose.yml" up -d --build

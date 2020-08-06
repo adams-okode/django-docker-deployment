@@ -1,0 +1,176 @@
+{% extends 'web_layout/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section id="home"
+	style="background-image: url('https://images.unsplash.com/photo-1508780709619-79562169bc64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'); background-size: 100%; background-repeat: no-repeat;"
+	class="home">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="main-banner">
+					<div class="d-sm-flex justify-content-between">
+						<div class="col-md-7" data-aos="zoom-in-up">
+							<div class="">
+								<div class="banner-title">
+									<h3 class="font-weight-medium">
+										The essay writing service you can count on
+									</h3>
+								</div>
+								<p class="mt-3">
+									We guarantee:
+									100% plagiarism-free papers
+									Talk directly with the writer
+									Proper citations and formatting
+									Money-back promise
+									<br>
+								</p>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="card">
+								<div class="card-body">
+									<img src="{% static 'images/group.png'%}"  alt="marsmello" class="img-fluid"
+										data-aos="zoom-in-up">
+									<a href="https://app.snappywriters.com/clients/makeorder"
+										class="btn btn-secondary mt-3">
+										Place New Order
+										<span class="mdi mdi-arrow-right"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% include 'web_home/order.html' %}
+{% include 'web_home/services.html' %}
+<section class="our-projects" id="projects">
+	<div class="container">
+		<div class="row pt-5 mt-5 pb-5 mb-5">
+			<div class="col-sm-3">
+				<div class="d-flex py-3 my-3 my-lg-0 justify-content-center" data-aos="fade-down">
+					<img src="{% static 'images/satisfied-client.svg'%}" alt="satisfied-client" class="mr-3">
+					<div>
+						<h4 class="font-weight-bold text-dark mb-0"><span class="scVal">0</span>%</h4>
+						<h5 class="text-dark mb-0">Satisfied clients</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="d-flex py-3 my-3 my-lg-0 justify-content-center" data-aos="fade-up">
+					<img src="{% static 'images/finished-project.svg'%}" alt="satisfied-client" class="mr-3">
+					<div>
+						<h4 class="font-weight-bold text-dark mb-0"><span class="fpVal">0</span></h4>
+						<h5 class="text-dark mb-0">Finished Papers</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="d-flex py-3 my-3 my-lg-0 justify-content-center" data-aos="fade-down">
+					<img src="{% static 'images/team-members.svg'%}" alt="Team Members" class="mr-3">
+					<div>
+						<h4 class="font-weight-bold text-dark mb-0"><span class="tMVal">0</span></h4>
+						<h5 class="text-dark mb-0">Writers</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="d-flex py-3 my-3 my-lg-0 justify-content-center" data-aos="fade-up">
+					<img src="{% static 'images/our-blog-posts.svg'%}" alt="Our Blog Posts" class="mr-3">
+					<div>
+						<h4 class="font-weight-bold text-dark mb-0"><span class="bPVal">0</span></h4>
+						<h5 class="text-dark mb-0">Our Blog Posts</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="testimonial" id="testimonial">
+	<div class="container">
+		<div class="row  mt-md-0 mt-lg-4">
+			<div class="col-sm-6 text-white" data-aos="fade-up">
+				<p class="font-weight-bold mb-3">Testimonials</p>
+				<h3 class="font-weight-medium">Our customers are our <br>biggest fans</h3>
+				<ul class="flipster-custom-nav">
+					<li class="flipster-custom-nav-item">
+						<a href="javascript:;" class="flipster-custom-nav-link" title="0"></a>
+					</li>
+					<li class="flipster-custom-nav-item">
+						<a href="javascript:;" class="flipster-custom-nav-link" title="1"></a>
+					</li>
+					<li class="flipster-custom-nav-item">
+						<a href="javascript:;" class="flipster-custom-nav-link active" title="2"></a>
+					</li>
+					<li class="flipster-custom-nav-item">
+						<a href="javascript:;" class="flipster-custom-nav-link" title="3"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-6" data-aos="fade-up">
+				<div id="testimonial-flipster">
+					<ul>
+						<li>
+							<div class="testimonial-item">
+								<p>The Writer is So good
+								</p>
+								<h6 class="testimonial-author">#7123141</h6>
+
+							</div>
+						</li>
+						<li>
+							<div class="testimonial-item">
+								<p>Excellent writing was professional and in time
+								</p>
+								<h6 class="testimonial-author">#1241416</h6>
+
+							</div>
+						</li>
+						<li>
+							<div class="testimonial-item">
+								<p>A very intuitive and dependable writer!
+								</p>
+								<h6 class="testimonial-author">#8323141</h6>
+
+							</div>
+						</li>
+						<li>
+							<div class="testimonial-item">
+								<p>Fantastic! Completed days before the deadline! Thank you!
+								</p>
+								<h6 class="testimonial-author">#9912311</h6>
+
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- <section class="clients pt-5 mt-5" data-aos="fade-up" data-aos-offset="-400">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="d-sm-flex justify-content-between align-items-center">
+					<img src="{% static 'images/deloit.svg'%}" alt="deloit" class="p-2 p-lg-0" data-aos="fade-down"
+						data-aos-offset="-400">
+					<img src="{% static 'images/erricson.svg'%}" alt="erricson" class="p-2 p-lg-0" data-aos="fade-up"
+						data-aos-offset="-400">
+					<img src="{% static 'images/netflix.svg'%}" alt="netflix" class="p-2 p-lg-0" data-aos="fade-down"
+						data-aos-offset="-400">
+					<img src="{% static 'images/instagram.svg'%}" alt="instagram" class="p-2 p-lg-0" data-aos="fade-up"
+						data-aos-offset="-400">
+					<img src="{% static 'images/coinbase.svg'%}" alt="coinbase" class="p-2 p-lg-0" data-aos="fade-down"
+						data-aos-offset="-400">
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+{% endblock content %}
