@@ -9,7 +9,7 @@ This is a step-by-step tutorial that details how to configure Django to run on D
 ### Step 1
 Create new project 
 ```bash
-$ mkdir django-on-docker && cd django-on-docker
+$ mkdir django-deploy-docker && cd django-deploy-docker
 $ mkdir app && cd app
 $ python3.8 -m venv env
 $ source env/bin/activate
