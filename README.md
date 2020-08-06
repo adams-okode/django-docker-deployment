@@ -1,6 +1,6 @@
 # Deploying Django App Inside Docker container
 
-This is a step-by-step tutorial that details how to configure Django to run on Docker with Postgres. For production environments, we'll add on Nginx and Gunicorn. We'll also take a look at how to serve Django static and media files via Nginx.
+This is a step-by-step tutorial that details how to configure Django to run on Docker with MySQL. For production environments, we'll add on Nginx and Gunicorn. We'll also take a look at how to serve Django static and media files via Nginx.
 
 *Prerequisites*
   - docker/docker-compose installed
