@@ -10,7 +10,7 @@ services:
       - media_volume:/usr/src/app/media
     expose:
       - "3762"
-    env_file: .env
+    env_file: ./app/.env
     depends_on:
       - mysql
     networks:
